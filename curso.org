@@ -1,0 +1,195 @@
+# -*- mode: org -*-
+# -*- coding: utf-8 -*-
+#+STARTUP: overview indent inlineimages logdrawer
+
+#+TITLE: Ciência Reprodutível: Experimentos em Computação
+#+TITLE: de Alto Desempenho
+#+AUTHOR: Pedro Bruel, Alfredo Goldman
+#+LANGUAGE:    en
+#+TAGS: noexport(n) Stats(S)
+#+TAGS: Teaching(T) R(R) OrgMode(O) Python(P)
+#+TAGS: Book(b) DOE(D) Code(C) NODAL(N) FPGA(F) Autotuning(A) Arnaud(r)
+#+TAGS: DataVis(v) PaperReview(W)
+#+EXPORT_SELECT_TAGS: Blog
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+COLUMNS: %25ITEM %TODO %3PRIORITY %TAGS
+#+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w@) APPT(a!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [final,12pt,twoside,a4paper]
+#+DRAWERS: latex_headers
+
+:latex_headers:
+#+LATEX_HEADER: \usepackage{geometry}
+#+LATEX_HEADER: \geometry{
+#+LATEX_HEADER:   top=32mm,
+#+LATEX_HEADER:   bottom=28mm,
+#+LATEX_HEADER:   left=24mm,
+#+LATEX_HEADER:   right=29mm,
+#+LATEX_HEADER:   textwidth=157mm, % 210-24-34
+#+LATEX_HEADER:   textheight=245mm, % 297-32-28
+#+LATEX_HEADER:   vmarginratio=8:7, % 32:28
+#+LATEX_HEADER:   hmarginratio=12:17, % 24:34
+#+LATEX_HEADER:   % Com geometry, esta medida não é tão relevante; basta garantir que ela
+#+LATEX_HEADER:   % seja menor que "top" e que o texto do cabeçalho caiba nela.
+#+LATEX_HEADER:   headheight=25.4mm,
+#+LATEX_HEADER:   % distância entre o início do texto principal e a base do cabeçalho;
+#+LATEX_HEADER:   % ou seja, o cabeçalho "invade" a margem superior nessa medida. Essa
+#+LATEX_HEADER:   % é a medida que determina a posição do cabeçalho
+#+LATEX_HEADER:   headsep=11mm,
+#+LATEX_HEADER:   footskip=10mm,
+#+LATEX_HEADER:   marginpar=20mm,
+#+LATEX_HEADER:   marginparsep=5mm,
+#+LATEX_HEADER: }
+#+LATEX_HEADER: \widowpenalty=10000
+#+LATEX_HEADER: \clubpenalty=10000
+#+LATEX_HEADER: \usepackage{indentfirst}
+#+LATEX_HEADER: \usepackage{tabularx}
+#+LATEX:HEADER: \usepackage[inline]{enumitem}
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \usepackage{amsmath,amsfonts,amssymb,amsthm}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{newpxtext}
+#+LATEX_HEADER: \usepackage{newpxmath}
+#+LATEX_HEADER: \usepackage{DejaVuSansMono}
+#+LATEX_HEADER: \usepackage{forest}
+#+LATEX_HEADER: \usepackage{titling}
+#+LATEX_HEADER: \usepackage{rotating}
+#+LATEX_HEADER: \usepackage{booktabs}
+#+LATEX_HEADER: \usepackage{multirow}
+#+LATEX_HEADER: \usepackage{array}
+#+LATEX_HEADER: \usepackage{colortbl}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{tikz-qtree}
+#+LATEX_HEADER: \usepackage{algpseudocode}
+#+LATEX_HEADER: \usepackage{algorithm}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{subcaption}
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage[scale=2]{ccicons}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage{relsize}
+#+LATEX_HEADER: \usepackage{bm}
+#+LATEX_HEADER: \usepackage{wasysym}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{ragged2e}
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{pgfplots}
+#+LATEX_HEADER: \usepackage{todonotes}
+#+LATEX_HEADER: \usepgfplotslibrary{dateplot}
+#+LATEX_HEADER: \lstset{ %
+#+LATEX_HEADER:   backgroundcolor={},
+#+LATEX_HEADER:   basicstyle=\ttfamily\tiny,
+#+LATEX_HEADER:   breakatwhitespace=true,
+#+LATEX_HEADER:   breaklines=true,
+#+LATEX_HEADER:   captionpos=b,
+#+LATEX_HEADER:   extendedchars=true,
+#+LATEX_HEADER:   frame=n,
+#+LATEX_HEADER:   numbers=left,
+#+LATEX_HEADER:   rulecolor=\color{black},
+#+LATEX_HEADER:   showspaces=false,
+#+LATEX_HEADER:   showstringspaces=false,
+#+LATEX_HEADER:   showtabs=false,
+#+LATEX_HEADER:   stepnumber=1,
+#+LATEX_HEADER:   stringstyle=\color{gray},
+#+LATEX_HEADER:   tabsize=2,
+#+LATEX_HEADER: }
+
+#+LATEX_HEADER: \renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+#+LATEX_HEADER: \onehalfspacing
+
+#+LATEX_HEADER: \usepackage[fit]{truncate}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \fancyhf{}
+
+#+LATEX_HEADER: \fancypagestyle{plain}{%
+#+LATEX_HEADER: \renewcommand{\headrulewidth}{0pt}
+#+LATEX_HEADER: \fancyfoot[RO,LE]{\thepage}
+#+LATEX_HEADER: \fancyhead[RO]{\nouppercase{\truncate{\headwidth}{\rightmark}}}
+#+LATEX_HEADER: \fancyhead[LE]{\nouppercase{\truncate{\headwidth}{\leftmark}}}
+#+LATEX_HEADER: }
+
+#+LATEX_HEADER: \pagestyle{plain}
+
+#+LATEX_HEADER: \hypersetup{
+#+LATEX_HEADER:     colorlinks=true,
+#+LATEX_HEADER:     linkcolor={red!50!black},
+#+LATEX_HEADER:     citecolor={blue!50!black},
+#+LATEX_HEADER:     urlcolor={blue!80!black}
+#+LATEX_HEADER: }
+
+#+LATEX_HEADER: \usepackage{blindtext}
+:end:
+
+* Planejamento do Curso
+** O que é Ciência Reprodutível?
+Conclusões produzidas a partir de  dados obtidos experimentalmente não podem ser
+consideradas  validadas  até  que   seja  possível  reproduzi-las  em  condições
+experimentais independentes. Esse princípio  orienta todo o progresso científico
+baseado em  metodologias experimentais.  A  pesquisa experimental em  Ciência da
+Computação está em posição singular para reforçar e promover a reprodutibilidade
+científica,  pois experimentos  computacionais em  determinados casos  podem ser
+acompanhados,  registrados, e  repetidos  com precisão  e controle  praticamente
+impossíveis em áreas  como a biologia e  a química.  As organizações  em prol da
+ciência brasileira têm portanto grandes  justificativas para promover e reforçar
+a reprodutibilidade científica.
+
+Os  [[https://www.acm.org/publications/policies/artifact-review-badging][esforços da  ACM]] são  um bom  exemplo dos  esforços iniciais  que podem  ser
+realizados em prol da reprodutibilidade.   Diversas conferências e periódicos da
+ACM adotam  um sistema de  insígnias para  marcar trabalhos cujos  esforços para
+reprodutibilidade  de  seus  experimentos são  significativos.   A  nomenclatura
+utilizada pela ACM é derivada  do [[https://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2012.pdf][Vocabulário Internacional de Metrologia]] (VIM),
+e distingue entre resultados e conclusões que podem ser reproduzidos:
+
+- Pela mesma equipe, nas mesmas condições experimentais (Repetibilidade)
+- Por uma equipe diferente, nas mesmas condições experimentais (Replicabilidade)
+- Por   uma   equipe   diferente,    em   condições   experimentais   diferentes
+  (Reprodutibilidade)
+
+O código e os dados que dão  suporte às conclusões de um estudo científico devem
+ser submetidos  junto ao  documento que será  publicado.  Esses  /artefatos/ são
+avaliados pelos  revisores e insígnias são  conferidas de acordo com  o nível de
+reprodutibilidade   alcançado.    Outras    organizações   também   promovem   a
+reprodutibilidade,   como    a   [[https://rescience.github.io/faq/][ReScience]],   que   recentemente    promoveu   o
+[[https://rescience.github.io/ten-years/][Desafio     de      10     Anos     da
+Reprodutibilidade]], onde  pesquisadores foram  incentivados a  submeter artigos
+com a reprodução de seus próprios resultados de no mínimo 10 anos de idade.
+
+Ações  como as  tomadas pela  ACM  podem ter  um  grande impacto  no reforço  da
+credibilidade  do método  científico e  no  avanço da  descoberta científica  no
+Brasil.
+** Problemas: É possível fazer Computação de Alto Desempenho Reprodutível?
+- Arquiteturas muito específicas
+  - Baixa disponibilidade
+- Software muito complexo
+  - Tempo de execução
+  - Consumo de energia
+- Custo elevado
+- Ciência fechada
+  - Financiamento público, mas acesso fechado
+- Análise Estatística e Desenho de Experimentos
+  - Desenho de Experimentos
+    - Quais experimentos fazer?
+    - Quantas repetições?
+  - Nem sempre é claro ou fácil analisar os resultados
+    - Você precisa mesmo de deep, reinforcement learning?
+** Soluções: Ferramentas para Reprodutibilidade
+- Virtualização
+  - Docker, Singularity, \dots
+- Controle de versão
+  - Git, \dots
+  - Hospedagem: GitHub, Gitlab, \dots
+- Documentos computacionais
+  - Orgmode, notebook Jupyter, Rmarkdown, \dots
+- Arquivamento de dados, código, relatórios
+  - Zenodo, software heritage, \dots
+- Ciência fechada
+  - Arxiv, preprints, scihub, libgen
+- Análise Estatística e Desenho de Experimentos
+  - Desenho de Experimentos: Coletar dados para testar hipóteses de forma eficiente
+  - Regressão Linear, ANOVA: Análises mais poderosas do que parecem
+  - Ferramentas na linguagem R, Julia, Python, \dots
