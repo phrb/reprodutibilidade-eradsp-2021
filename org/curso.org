@@ -135,12 +135,13 @@ impossíveis em áreas  como a biologia e  a química.  As organizações  em pr
 ciência brasileira têm portanto grandes  justificativas para promover e reforçar
 a reprodutibilidade científica.
 
-Os  [[https://www.acm.org/publications/policies/artifact-review-badging][esforços da  ACM]] são  um bom  exemplo dos  esforços iniciais  que podem  ser
-realizados em prol da reprodutibilidade.   Diversas conferências e periódicos da
-ACM adotam  um sistema de  insígnias para  marcar trabalhos cujos  esforços para
-reprodutibilidade  de  seus  experimentos são  significativos.   A  nomenclatura
-utilizada pela ACM é derivada  do [[https://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2012.pdf][Vocabulário Internacional de Metrologia]] (VIM),
-e distingue entre resultados e conclusões que podem ser reproduzidos:
+Os [[https://www.acm.org/publications/policies/artifact-review-and-badging-current][esforços da ACM]] são um bom exemplo dos empenhos iniciais que podem ser
+realizados em prol da reprodutibilidade.  Diversas conferências e
+periódicos da ACM adotam um sistema de insígnias para marcar trabalhos
+cujos esforços para reprodutibilidade de seus experimentos são
+significativos.  A nomenclatura utilizada pela ACM é derivada do
+[[https://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2012.pdf][Vocabulário Internacional de Metrologia]] (VIM), e distingue entre
+resultados e conclusões que podem ser reproduzidos:
 
 - Pela mesma equipe, nas mesmas condições experimentais (Repetibilidade)
 - Por uma equipe diferente, nas mesmas condições experimentais (Replicabilidade)
