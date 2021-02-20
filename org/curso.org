@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #+STARTUP: overview indent inlineimages logdrawer
 
-#+TITLE: @@latex: Ciência Reprodutível: Experimentos em \\
+#+TITLE: @@latex: Ciência Reprodutível para Experimentos em \\
 #+TITLE: Computação de Alto Desempenho@@
 #+AUTHOR:
 #+LANGUAGE: bt-br
@@ -29,6 +29,7 @@
 #+LATEX_HEADER: \usepackage{multirow}
 #+LATEX_HEADER: \usepackage{array}
 #+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{indentfirst}
 #+LATEX_HEADER: \usepackage[brazilian]{babel}
 #+LATEX_HEADER: \usepackage[scale=2]{ccicons}
 #+LATEX_HEADER: \usepackage{hyperref}
@@ -74,18 +75,65 @@
 * Abstract                                                           :ignore:
 #+begin_export latex
 \begin{abstract}
-A
+  Neste  minicurso   apresentaremos  uma  introdução  à   Ciência  Reprodutível,
+  orientada por discussões  sobre os problemas comumente  enfrentados na ciência
+  experimental,  e  por  apresentações  de possíveis  soluções  que  promovam  a
+  reprodutibilidade no contexto de experimentos computacionais.
 \end{abstract}
 #+end_export
 
-- Conhecimentos necessários;
-- Relevância para a Escola Regional de Alto Desempenho;
-- Detalhamento dos tópicos abordados;
-- Breve biografia dos proponentes;
-- Público-alvo e duração prevista.
-- Recursos necessários para a realização do minicurso via Internet.
+* Introdução
+O  objetivo  deste minicurso  é  promover  e  difundir conceitos  e  ferramentas
+associados à produção de Ciência Reprodutível para experimentos em Computação de
+Alto  Desempenho.   Os  participantes  devem  ter  familiaridade  com  conceitos
+introdutórios de linguagens  de programação. Fundamentos de  estatística não são
+estritamente  necessários, mas  podem aumentar  o aproveitamento  das discussões
+sobre análise de resultados.
+
+Grande  parte da  pesquisa em  Computação  de Alto  Desempenho envolve  métricas
+associadas a  software ou  hardware, como  o tempo  de execução  e o  consumo de
+memória e energia. Além disso, a coleta e a análise estatística de dados é parte
+fundamental da  argumentação construída  a partir dos  resultados. Como  em toda
+parte empírica da ciência, é crucial garantir a reprodutibilidade da pesquisa em
+Computação  de  Alto Desempenho,  e  consideramos  portanto  que este  tópico  é
+bastante relevante para a Escola Regional de Alto Desempenho.
+
+Propomos uma  apresentação de  duas horas,  cujo público  alvo são  estudantes e
+pesquisadores realizando  iniciação científica, mestrado, e  doutorado, em áreas
+que envolvam experimentos computacionais.   Os recursos estritamente necessários
+para este curso são apenas o acesso à internet.
+
+Este documento é  organizado como descrito a  seguir.  A Seção\nbsp{}[[Proponentes]]
+apresenta biografias  curtas dos proponentes, e  a Seção\nbsp{}[[Tópicos Abordados]]
+apresenta detalhes sobre os tópicos abordados no minicurso.
+
+* Proponentes
+*Alfredo Goldman*  é Professor  Associado na  Universidade de  São Paulo.  Ele é
+editor de  área de concentração  na revista  Parallel Computing, e  participa no
+comitê  de  programa  de  conferências  como XP,  IPDPS,  IEEE-NCA,  SC,  JSSPP,
+SBAC-PAD,  SBRC,  SBES  e  SBQS.  Seus interesses  principais  de  pesquisa  são
+Computação Paralela e Distribuída, Escalonamento, e Métodos Ágeis.
+
+*Lucas Schnorr* é Professor Adjunto no Instituto de Informática da Universidade
+Federal do Rio Grande do Sul (UFRGS). Seus interesses principais de pesquisa são
+Análise de Desempenho, Simulação de Sistemas Computacionais de Alto Desempenho,
+e Ciência de Dados.
+
+*Pedro Bruel* é aluno de doutorado na  Universidade de São Paulo e na Université
+de Grenoble Alpes, França, orientado  pelos professores Alfredo Goldman e Arnaud
+Legrand.   Seu interesses  principais de  pesquisa  são Modelagem  e Análise  de
+Desempenho para Computação de Alto Desempenho.
 
 * Tópicos Abordados
+O minicurso  é estruturado como  segue.  Primeiro, motivaremos  e apresentaremos
+Ciência  Reprodutível no  contexto da  Ciência da  Computação, como  descrito na
+Seção\nbsp{}[[O   que   é   Ciência  Reprodutível?]].    Depois,   discutiremos   na
+Seção\nbsp{}[[Problemas:   É  possível   fazer  Computação   de  Alto   Desempenho
+Reprodutível?]]  os principais empecilhos para se fazer experimentos reprodutíveis
+em   Computação   de   Alto   Desempenho,   e   em   seguida   discutiremos   na
+Seção\nbsp{}[[Soluções:  Ferramentas  para Reprodutibilidade]]  algumas  estratégias
+para contornar ou resolver os problemas levantados.
+
 ** O que é Ciência Reprodutível?
 Conclusões produzidas a partir de  dados obtidos experimentalmente não podem ser
 consideradas  validadas  até  que   seja  possível  reproduzi-las  em  condições
@@ -125,21 +173,25 @@ Ações  como as  tomadas pela  ACM  podem ter  um  grande impacto  no reforço 
 credibilidade  do método  científico e  no  avanço da  descoberta científica  no
 Brasil.
 ** Problemas: É possível fazer Computação de Alto Desempenho Reprodutível?
+Abaixo  listamos  alguns dos  problemas  que  vamos apresentar,  relacionados  a
+experimentos com Computação de Alto Desempenho.
+
+- Custo elevado
 - Arquiteturas muito específicas
   - Baixa disponibilidade
 - Software muito complexo
   - Tempo de execução
   - Consumo de energia
-- Custo elevado
 - Ciência fechada
-  - Financiamento público, mas acesso fechado
+  - O financiamento é público, mas o acesso é fechado
 - Análise Estatística e Desenho de Experimentos
   - Desenho de Experimentos
-    - Quais experimentos fazer?
-    - Quantas repetições?
   - Nem sempre é claro ou fácil analisar os resultados
-    - Você precisa mesmo de deep, reinforcement learning?
+  - Quando precisamos de /Machine Learning/?
+
 ** Soluções: Ferramentas para Reprodutibilidade
+Abaixo listamos algumas das soluções que vamos discutir:
+
 - Virtualização
   - Docker, Singularity, \dots
 - Controle de versão
@@ -155,9 +207,6 @@ Brasil.
   - Desenho de Experimentos: Coletar dados para testar hipóteses de forma eficiente
   - Regressão Linear, ANOVA: Análises mais poderosas do que parecem
   - Ferramentas na linguagem R, Julia, Python, \dots
-* Proponentes
-* Público-Alvo e Duração
-* Recursos Necessários
 
 * Referências                                                        :ignore:
 #+begin_export latex
