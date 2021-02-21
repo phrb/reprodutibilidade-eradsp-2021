@@ -114,7 +114,7 @@ comitê  de  programa  de  conferências  como XP,  IPDPS,  IEEE-NCA,  SC,  JSSP
 SBAC-PAD,  SBRC,  SBES  e  SBQS.  Seus interesses  principais  de  pesquisa  são
 Computação Paralela e Distribuída, Escalonamento, e Métodos Ágeis.
 
-*Lucas Schnorr* é Professor Adjunto no Instituto de Informática da Universidade
+*Lucas Mello Schnorr* é Professor Associado no Instituto de Informática da Universidade
 Federal do Rio Grande do Sul (UFRGS). Seus interesses principais de pesquisa são
 Análise de Desempenho, Simulação de Sistemas Computacionais de Alto Desempenho,
 e Ciência de Dados.
