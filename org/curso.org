@@ -72,7 +72,25 @@
 #+LATEX_HEADER: }
 :end:
 
-* Abstract                                                           :ignore:
+* Rascunho
+** Mensagem principal
+1. A reprodutibilidade é fundamental para a produção de ciência experimental
+2. Para a reprodutibilidade, são fundamentais:
+   - Noções básicas de estatística (incluindo desenho de experimentos)
+   - Registro contínuo (o caderno de laboratório)
+   - Controle de versão para texto, código,  e dados (suficiente para Ciência da
+     Computação? E o Hardware?)
+   - Abertura  e registro  dos  dados  e análises  (diferente  da hospedagem  no
+     GitHub, etc)
+
+A partir  disso, nosso  texto pode apresentar  alguns conceitos  de estatística,
+apontando  para fontes  de aprofundamento,  e algumas  ferramentas interessantes
+para  implementar o  registro contínuo,  o controle  de versão,  e o  registro e
+disponibilização de dados. No fim, apresentamos algum exemplo prático em Ciência
+da Computação.  No ERAD-SP, apresentamos  algo relacionado a Computação  de Alto
+Desempenho.
+
+* Resumo                                                             :ignore:
 #+begin_export latex
 \begin{abstract}
   Neste  minicurso   apresentaremos  uma  introdução  à   Ciência  Reprodutível,
