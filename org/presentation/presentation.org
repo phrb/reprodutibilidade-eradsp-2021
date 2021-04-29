@@ -145,9 +145,17 @@
 - Jupyter Notebook, R, pacotes R, (docker?)
 - Site com instruções e mais recursos (livros, ...)
 * O que é Ciência Reprodutível?
+:PROPERTIES:
+:CUSTOM_ID: sec:repro
+:END:
+
 ** O que é Ciência Reprodutível?
 ** Crise de Reprodutibilidade
 * Desafios para se fazer Ciência Reprodutível
+:PROPERTIES:
+:CUSTOM_ID: sec:challenges
+:END:
+
 ** Computação de Alto Desempenho: Desafios
 - Arquiteturas Específicas
   - Custo elevado
@@ -187,12 +195,20 @@
 - Fazer análises mais simples primeiro: mas fáceis de interpretar
 ** É Possível Garantir a Reprodutibilidade?
 * Mão na Massa: Ferramentas para Reprodutibilidade
+:PROPERTIES:
+:CUSTOM_ID: sec:handson
+:END:
+
 ** Controle de Versão
 ** Hospedagem
 ** Documentos Computacionais
 ** Estatística
 ** Arquivamento
-* Conclusão?
+* Conclusão
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
 ** É possível fazer Ciência (mais) Reprodutível!
 * Ending Title :B_ignoreheading:
 :PROPERTIES:
