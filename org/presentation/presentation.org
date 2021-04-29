@@ -119,6 +119,13 @@
 
 #+LATEX_HEADER: \captionsetup[figure]{labelformat=empty}
 
+#+LATEX_HEADER: \hypersetup{
+#+LATEX_HEADER:     colorlinks=true,
+#+LATEX_HEADER:     linkcolor={red!50!black},
+#+LATEX_HEADER:     citecolor={blue!50!black},
+#+LATEX_HEADER:     urlcolor={blue!80!black}
+#+LATEX_HEADER: }
+
 #+LATEX_HEADER: \makeatletter
 #+LATEX_HEADER: \setlength{\metropolis@titleseparator@linewidth}{1pt}
 #+LATEX_HEADER: \setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
