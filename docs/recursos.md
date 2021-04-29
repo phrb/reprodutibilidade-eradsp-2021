@@ -2,4 +2,11 @@
 
 # Recursos
 
--   Dependências
+
+## Ciência Reprodutível
+
+
+## Estatística
+
+
+## Aplicação em Computação de Alto Desempenho

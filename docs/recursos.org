@@ -2,4 +2,6 @@
 #+OPTIONS: toc:nil TeX:t LaTeX:t
 
 * Recursos
-- Dependências
+** Ciência Reprodutível
+** Estatística
+** Aplicação em Computação de Alto Desempenho
