@@ -15,10 +15,9 @@
 #+COLUMNS: %25ITEM %TODO %3PRIORITY %TAGS
 #+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w@) APPT(a!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
 
+* LaTeX Configuration                                       :noexport:ignore:
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [12pt]
-
-#+DRAWERS: latex_headers
 
 :latex_headers:
 #+LATEX_HEADER: \usepackage{sbc-template}
@@ -70,9 +69,12 @@
 #+LATEX_HEADER:     citecolor={black},
 #+LATEX_HEADER:     urlcolor={black}
 #+LATEX_HEADER: }
+
+#+LATEX_HEADER: \usepackage[style=numeric,backend=bibtex]{biblatex}
+#+LATEX_HEADER: \addbibresource{references.bib}
 :end:
 
-* Rascunho
+* Rascunho                                                  :noexport:ignore:
 ** Mensagem principal
 1. A reprodutibilidade é fundamental para a produção de ciência experimental
 2. Para a reprodutibilidade, são fundamentais:
@@ -228,6 +230,5 @@ Abaixo listamos algumas das soluções que vamos discutir:
 
 * Referências                                                        :ignore:
 #+begin_export latex
-\bibliographystyle{IEEEtran}
-\bibliography{references}
+\printbibliography[heading=bibintoc]
 #+end_export
