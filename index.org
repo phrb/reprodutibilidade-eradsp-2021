@@ -1,0 +1,9 @@
+#+STARTUP: overview indent inlineimages logdrawer
+#+OPTIONS: toc:nil TeX:t LaTeX:t
+
+* Ciência Reprodutível para Experimentos em Computação de Alto Desempenho
+Este é o site do minicurso apresentado na ERADSP 2021.
+
+** Conteúdo
+- [[file:exercicio.html][Exercício Prático]]
+- [[file:recursos.html][Recursos]]

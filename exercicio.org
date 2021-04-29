@@ -1,0 +1,5 @@
+#+STARTUP: overview indent inlineimages logdrawer
+#+OPTIONS: toc:nil TeX:t LaTeX:t
+
+* Exercício
+- Dependências
