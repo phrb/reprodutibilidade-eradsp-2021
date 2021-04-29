@@ -133,6 +133,17 @@
 #+LATEX_HEADER: \makeatother
 :end:
 
+* Introdução
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+** Roteiro
+#+TOC: :headlines 3
+
+** Dependências e outros Recursos
+- Jupyter Notebook, R, pacotes R, (docker?)
+- Site com instruções e mais recursos (livros, ...)
 * O que é Ciência Reprodutível?
 ** O que é Ciência Reprodutível?
 ** Crise de Reprodutibilidade
