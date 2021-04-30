@@ -58,7 +58,7 @@
 #+LATEX_HEADER: \definecolor{Accent}{HTML}{b10000}
 
 #+LATEX_HEADER: \setbeamercolor{alerted text}{fg=Accent}
-#+LATEX_HEADER: \setbeamercolor{frametitle}{fg=Accent,bg=White}
+#+LATEX_HEADER: \setbeamercolor{frametitle}{fg=Accent,bg=normal text.bg}
 #+LATEX_HEADER: \setbeamercolor{normal text}{bg=black!2,fg=Base}
 
 #+LATEX_HEADER: \usepackage{newpxtext}
