@@ -75,7 +75,7 @@ See [[Emacs Setup]] below for local buffer variables
 #+LATEX_HEADER:   stringstyle=\color{gray},
 #+LATEX_HEADER:   tabsize=2,
 #+LATEX_HEADER: }
-#+LATEX_HEADER: \renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+#+LATEX_HEADER: \renewcommand*{\UrlFont}{\ttfamily\smaller[2]\relax}
 #+LATEX_HEADER: \graphicspath{{../../img/}}
 #+LATEX_HEADER: \addtobeamertemplate{block begin}{}{\justifying}
 
