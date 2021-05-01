@@ -83,14 +83,14 @@ See [[Emacs Setup]] below for local buffer variables
 
 #+LATEX_HEADER: \hypersetup{
 #+LATEX_HEADER:     colorlinks=true,
-#+LATEX_HEADER:     linkcolor={red!50!black},
-#+LATEX_HEADER:     citecolor={blue!50!black},
-#+LATEX_HEADER:     urlcolor={blue!80!black}
+#+LATEX_HEADER:     linkcolor={Accent},
+#+LATEX_HEADER:     citecolor={Accent},
+#+LATEX_HEADER:     urlcolor={Accent}
 #+LATEX_HEADER: }
 
 #+LATEX_HEADER: \makeatletter
 #+LATEX_HEADER: \setlength{\metropolis@titleseparator@linewidth}{1pt}
-#+LATEX_HEADER: \setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
+#+LATEX_HEADER: \setlength{\metropolis@progressonsectionpage@linewidth}{2.5pt}
 # #+LATEX_HEADER: \setlength{\metropolis@progressinheadfoot@linewidth}{2pt}
 #+LATEX_HEADER: \makeatother
 :end:
