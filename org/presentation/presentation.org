@@ -53,37 +53,9 @@ See [[Emacs Setup]] below for local buffer variables
 
 #+LATEX_HEADER: \usepackage{newpxtext}
 #+LATEX_HEADER: \usepackage{newpxmath}
-# #+LATEX_HEADER: \usefonttheme{serif}
-# #+LATEX_HEADER: \usepackage{DejaVuSansMono}
+#+LATEX_HEADER: \usepackage{DejaVuSansMono}
+#+LATEX_HEADER: \setmonofont{DejaVuSansMono}
 
-#+LATEX_HEADER: \lstdefinelanguage{Julia}%
-#+LATEX_HEADER:   {morekeywords={abstract,struct,break,case,catch,const,continue,do,else,elseif,%
-#+LATEX_HEADER:       end,export,false,for,function,immutable,mutable,using,import,importall,if,in,%
-#+LATEX_HEADER:       macro,module,quote,return,switch,true,try,catch,type,typealias,%
-#+LATEX_HEADER:       while,<:,+,-,::,/},%
-#+LATEX_HEADER:    sensitive=true,%
-#+LATEX_HEADER:    alsoother={$},%
-#+LATEX_HEADER:    morecomment=[l]\#,%
-#+LATEX_HEADER:    morecomment=[n]{\#=}{=\#},%
-#+LATEX_HEADER:    morestring=[s]{"}{"},%
-#+LATEX_HEADER:    morestring=[m]{'}{'},%
-#+LATEX_HEADER: }[keywords,comments,strings]%
-#+LATEX_HEADER: \lstdefinelanguage{dockerfile}{
-#+LATEX_HEADER:   keywords={FROM, RUN, COPY, ADD, ENTRYPOINT, CMD,  ENV, ARG, WORKDIR, EXPOSE, LABEL, USER, VOLUME, STOPSIGNAL, ONBUILD, MAINTAINER},
-#+LATEX_HEADER:   sensitive=false,
-#+LATEX_HEADER:   comment=[l]{\#},
-#+LATEX_HEADER:   morestring=[b]',
-#+LATEX_HEADER:   morestring=[b]"
-#+LATEX_HEADER: }
-#+LATEX_HEADER: \lstdefinelanguage{yaml}{
-#+LATEX_HEADER:   keywords={true,false,null,y,n},
-#+LATEX_HEADER:   ndkeywords={},
-#+LATEX_HEADER:   sensitive=false,
-#+LATEX_HEADER:   comment=[l]{\#},
-#+LATEX_HEADER:   morecomment=[s]{/*}{*/},
-#+LATEX_HEADER:   morestring=[b]',
-#+LATEX_HEADER:   morestring=[b]"
-#+LATEX_HEADER: }
 #+LATEX_HEADER: \lstset{ %
 #+LATEX_HEADER:   backgroundcolor={},
 #+LATEX_HEADER:   basicstyle=\ttfamily\scriptsize,
