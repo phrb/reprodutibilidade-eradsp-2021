@@ -99,6 +99,39 @@ See [[Emacs Setup]] below for local buffer variables
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
+** Agradecimentos e Crédito
+A *Arnaud Legrand* e seu curso:
+
+#+latex: \bgroup\center
+#+latex: \includegraphics[height=3.4cm]{./img/smpe_preview.png}
+
+https://github.com/alegrand/SMPE
+
+#+latex: \egroup
+
+#+latex: \hfill\includegraphics[height=1.8cm]{./img/in_science_we_trust.jpg}
+
+** Dependências e outros Recursos
+- Site com *instruções* e mais *recursos*:
+
+#+latex: \bgroup\center
+#+latex: \includegraphics[height=3.4cm]{./img/eradsp_preview.png}
+
+https://phrb.github.io/reprodutibilidade-eradsp-2021
+
+#+latex: \egroup
+
+- Temos uma imagem *Docker* com Jupyter Notebook, R, pacotes, e dados:
+
+#+latex: \bgroup\center
+#+begin_SRC bash :results output :session *Shell* :eval no-export :exports code
+git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
+cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+#+end_SRC
+#+latex: \egroup
+
+- Jupyter Docker Stacks:
+  [[https://github.com/jupyter/docker-stacks][github.com/jupyter/docker-stacks]]
 
 ** Roteiro
 #+TOC: :headlines 3
