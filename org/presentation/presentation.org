@@ -136,16 +136,136 @@ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
 ** Roteiro
 #+TOC: :headlines 3
 
-** Dependências e outros Recursos
-- Jupyter Notebook, R, pacotes R, (docker?)
-- Site com instruções e mais recursos (livros, ...)
 * O que é Ciência Reprodutível?
 :PROPERTIES:
 :CUSTOM_ID: sec:repro
 :END:
+** O que sobra do Trabalho Científico?
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/iceberg_publication.png]]
 
 ** O que é Ciência Reprodutível?
-** Crise de Reprodutibilidade
+#+latex: \begin{center}\colorbox{Highlight}{
+Trabalhar de forma *transparente* para
+diminuir a distância entre *quem produz e quem lê*
+#+latex: }\end{center}
+
+*** Figure                                                          :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.4
+:END:
+
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/iceberg_publication.png]]
+
+**** Trabalhar de forma transparente?
+#+latex: \bgroup\footnotesize
+- Caderno de laboratório e metodologia
+- Ambientes de software, controle de versão
+- Plataformas de compartilhamento, colaboração, e arquivamento
+#+latex:  \egroup
+
+*** Definições                                              :B_block:BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.6
+:BEAMER_env: block
+:END:
+
+- [[https://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2012.pdf][Vocabulário
+  Internacional de Metrologia]] (VIM)
+
+Distingue entre *resultados* e *conclusões* que podem ser reproduzidos:
+
+- Pela mesma equipe, nas mesmas condições experimentais: /Repetibilidade/
+- Por uma equipe diferente, nas mesmas condições experimentais: /Replicabilidade/
+- Por   uma   equipe   diferente,    em   condições   experimentais   diferentes:
+  *Reprodutibilidade*
+
+** Há uma Crise de Reprodutibilidade?
+Resultados de um questionário com *1.500 cientistas*:
+
+*** Left                                                            :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_LATEX: :width 0.85\textwidth
+[[./img/nature_failed_reproduce.jpg]]
+
+*** Right                                                           :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/nature_published.jpg]]
+
+*** Stop columns                                          :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+\bgroup\smallskip\small
+([[https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970][
+1,500 Scientists Lift the Lid on Reproducibility]], Nature, Maio de 2016)
+\egroup
+
+** O que dificulta a Reprodutibilidade?
+Resultados de um questionário com *1.500 cientistas*:
+
+*** Left                                                            :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/nature_irreproduce_1.jpg]]
+
+*** Right                                                           :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/nature_irreproduce_2.jpg]]
+
+*** Stop columns                                          :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+\bgroup\smallskip\small
+([[https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970][
+1,500 Scientists Lift the Lid on Reproducibility]], Nature, Maio de 2016)
+\egroup
+
+** O que pode promover a Reprodutibilidade?
+Resultados de um questionário com *1.500 cientistas*:
+
+*** Left                                                            :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/nature_boost_repro_1.jpg]]
+
+*** Right                                                           :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_LATEX: :width 0.9\textwidth
+[[./img/nature_boost_repro_2.jpg]]
+
+*** Stop columns                                          :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+\bgroup\smallskip\small
+([[https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970][
+1,500 Scientists Lift the Lid on Reproducibility]], Nature, Maio de 2016)
+\egroup
+
+** Abordagens da ACM
 * Desafios para se fazer Ciência Reprodutível
 :PROPERTIES:
 :CUSTOM_ID: sec:challenges
