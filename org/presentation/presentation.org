@@ -44,9 +44,8 @@ See [[Emacs Setup]] below for local buffer variables
 #+LATEX_HEADER: \usepgfplotslibrary{dateplot}
 
 #+LATEX_HEADER: \definecolor{Base}{HTML}{191F26}
-# #+LATEX_HEADER: \definecolor{Accent}{HTML}{157FFF}
-# #+LATEX_HEADER: \definecolor{Accent}{HTML}{bb0300}
 #+LATEX_HEADER: \definecolor{Accent}{HTML}{b10000}
+#+LATEX_HEADER: \colorlet{Highlight}{Accent!18}
 
 #+LATEX_HEADER: \setbeamercolor{alerted text}{fg=Accent}
 #+LATEX_HEADER: \setbeamercolor{frametitle}{fg=Accent,bg=normal text.bg}
