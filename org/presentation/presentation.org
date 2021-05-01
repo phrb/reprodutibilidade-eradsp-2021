@@ -1,30 +1,21 @@
 #+STARTUP: beamer overview indent inlineimages logdrawer
 #+TITLE: @@latex: Ciência Reprodutível para Experimentos em \\
 #+TITLE: Computação de Alto Desempenho@@
-#+AUTHOR:    \footnotesize Pedro Bruel \newline \scriptsize \emph{phrb@ime.usp.br}
-#+EMAIL:     phrb@ime.usp.br
-#+DATE:      \scriptsize \today
+#+AUTHOR:    \footnotesize \alert{Pedro Bruel}, Lucas Schnorr, Alfredo Goldman
+#+DATE:      \scriptsize \emph{phrb@ime.usp.br} \newline \scriptsize \today
 #+DESCRIPTION:
 #+KEYWORDS:
-#+LANGUAGE:  en
+#+LANGUAGE:  bt-br
 #+OPTIONS:   H:2 num:t toc:nil @:t \n:nil ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   tex:t latex:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+EXPORT_SELECT_TAGS: export
-#+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:
-#+LINK_HOME:
+#+TAGS: noexport(n)
 
-* Setup (Run this first!)                          :B_ignoreheading:noexport:
+* LaTeX Setup                                      :B_ignoreheading:noexport:
 :PROPERTIES:
 :BEAMER_env: ignoreheading
 :END:
-** Use XeLaTeX (Run me first!)
-#+HEADER: :results output :exports none :eval no-export
-#+BEGIN_SRC emacs-lisp
-(setq-local org-latex-pdf-process (list "latexmk -xelatex %f"))
-#+END_SRC
 
-#+RESULTS:
+See [[Emacs Setup]] below for local buffer variables
 
 ** LaTeX Configuration
 :latex_header:
