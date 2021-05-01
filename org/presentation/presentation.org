@@ -284,17 +284,23 @@ Resultados de um questionário com *1.500 cientistas*:
 - Hospedagem pública
 - Gerenciadores de dependências
 - Simuladores
+- Hardware aberto
+- Nuvem?
 ** Ciência Fechada: Desafios
 - Como acessar publicações?
 - Como compartilhar resultados?
-- Software livre
+- Software fechado
+- Custo para acessar arquivos
 - Análises de dados, figuras: código
 ** Ciência Fechada: Abordagens
-- Documentos computacionais
+- Ciência aberta
+- Revisão por pares aberta
+- Documentos computacionais: software livre
 - Arquivamento
 - Gerenciadores de dependências
-- Controle de versão
 - Hospedagem pública
+- Arnaud: Changing academic practices
+- Arnaud: What About Open Science?
 ** Estatística: Desafios
 - Datasaurus Dozen
   - https://cran.r-project.org/web/packages/datasauRus/
