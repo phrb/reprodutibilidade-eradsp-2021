@@ -237,7 +237,7 @@ Resultados de um questionário com *1.500 cientistas*:
 1,500 Scientists Lift the Lid on Reproducibility]], Nature, Maio de 2016)
 \egroup
 
-** O que pode promover a Reprodutibilidade?
+** O que pode Promover a Reprodutibilidade?
 Resultados de um questionário com *1.500 cientistas*:
 
 *** Left                                                            :BMCOL:
@@ -248,13 +248,15 @@ Resultados de um questionário com *1.500 cientistas*:
 #+ATTR_LATEX: :width 0.9\textwidth
 [[./img/nature_boost_repro_1.jpg]]
 
-*** Right                                                           :BMCOL:
+*** Promovem a Reprodutibilidade                            :B_block:BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.5
+:BEAMER_env: block
 :END:
 
-#+ATTR_LATEX: :width 0.9\textwidth
-[[./img/nature_boost_repro_2.jpg]]
+- Estudar *estatística*
+- *Colaboração* e *comunidade*
+- Melhores *incentivos*
 
 *** Stop columns                                          :B_ignoreheading:
 :PROPERTIES:
@@ -265,66 +267,198 @@ Resultados de um questionário com *1.500 cientistas*:
 1,500 Scientists Lift the Lid on Reproducibility]], Nature, Maio de 2016)
 \egroup
 
-** Abordagens da ACM
-* Desafios para se fazer Ciência Reprodutível
+* Desafios e Abordagens para se fazer Ciência Reprodutível
 :PROPERTIES:
 :CUSTOM_ID: sec:challenges
 :END:
+** Ferramentas Existentes e Padrões Emergentes
+:PROPERTIES:
+:BEAMER_opt: t
+:END:
 
-** Computação de Alto Desempenho: Desafios
-- Arquiteturas Específicas
-  - Custo elevado
-  - Como acessar?
-- Software complexo
-  - Dependências
-- Consumo de Energia
-** Computação de Alto Desempenho: Abordagens
-- Virtualização
-- Controle de versão
-- Hospedagem pública
-- Gerenciadores de dependências
-- Simuladores
-- Hardware aberto
-- Nuvem?
-** Ciência Fechada: Desafios
-- Como acessar publicações?
-- Como compartilhar resultados?
-- Software fechado
-- Custo para acessar arquivos
-- Análises de dados, figuras: código
-** Ciência Fechada: Abordagens
-- Ciência aberta
-- Revisão por pares aberta
-- Documentos computacionais: software livre
-- Arquivamento
-- Gerenciadores de dependências
-- Hospedagem pública
-- Arnaud: Changing academic practices
-- Arnaud: What About Open Science?
-** Estatística: Desafios
-- Datasaurus Dozen
-  - https://cran.r-project.org/web/packages/datasauRus/
-- O que é incerteza?
-- Como planejar experimentos?
-- Como analisar resultados?
-  - O que é Machine Learning?
-** Estatística: Abordagens
-- Documentos computacionais
-- Desenho de Experimentos
-- Controle de versão
-- Gráficos, antes de qualquer análise
-- Fazer análises mais simples primeiro: mas fáceis de interpretar
+#+LaTeX: \begin{columns}\begin{column}[t]{.4\linewidth}\centering
+\bf *Cadernos de Laboratório*
+
+#+ATTR_LaTeX: :width .7\textwidth
+file:./img/jupyterpreview.png
+
+#+LaTeX: \includegraphics[height=.7cm]{./img/Jupyter_logo.png}
+#+LaTeX: \includegraphics[height=.7cm]{./img/OrgMode_logo.png}
+#+LaTeX: \includegraphics[height=.7cm]{./img/RStudio_logo.png}
+#+ATTR_LaTeX: :width 0.65\textwidth
+file:./img/workflows.png
+
+#+LaTeX: \end{column}\begin{column}[t]{.35\linewidth}\centering
+\bf *Ambientes de Software*
+
+#+ATTR_LaTeX: :height 2cm
+file:./img/dependency_trees/matplotlib.pdf
+#+ATTR_LaTeX: :height 1.1cm
+file:./img/platform_diversity.png
+
+#+LaTeX: \includegraphics[height=.8cm]{./img/docker_logo.png}
+#+LaTeX: \includegraphics[height=.8cm]{./img/singularity_logo.png}
+
+#+LaTeX: \includegraphics[height=.7cm]{./img/reprozip.png}
+
+#+LaTeX: \includegraphics[height=.8cm]{./img/Guix_logo.png}
+#+LaTeX: \includegraphics[height=.8cm]{./img/nix_logo.png}
+
+#+LaTeX: \end{column}\begin{column}[t]{.35\linewidth}\centering
+\bf *Plataformas de Compartilhamento*\bigskip
+
+#+LaTeX: \includegraphics[height=1cm]{./img/git_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/github_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/gitlab_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/JupyterHub_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/ArXiv-web.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/LogoHAL.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/Figshare-logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/Zenodo-logo.jpg}
+#+LaTeX: \includegraphics[height=1cm]{./img/swh-logo.png}
+
+#+LaTeX: \end{column}\end{columns}\bigskip
+** Cadernos de Laboratório
+#+LaTeX: \includegraphics<+>[width=\linewidth]{./img/notebook/notebooks_0.pdf}%
+#+LaTeX: \includegraphics<+->[width=\linewidth]{./img/notebook/notebooks.pdf}%
+
+#+BEGIN_EXPORT latex
+\begin{overlayarea}{\linewidth}{0cm}
+  \vspace{-1.8cm}
+  \begin{center}
+    \includegraphics<+>[height=.7cm]{./img/Jupyter_logo.png}
+    \includegraphics<.>[height=.7cm]{./img/OrgMode_logo.png}
+    \includegraphics<.>[height=.7cm]{./img/RStudio_logo.png}
+
+    \only<.>{\href{https://jupyter.org/try}{https://jupyter.org/try}}
+  \end{center}
+\end{overlayarea}
+#+END_EXPORT
+** Ambientes de Software: O que se Esconde nas Dependências?
+#+begin_SRC bash :results output :session *Shell* :eval no-export :exports code
+$ pacman -Qi python-matplotlib
+#+end_SRC
+
+#+latex: \smaller[3]
+#+begin_example
+Name            : python-matplotlib
+Version         : 3.4.1-2
+Depends On      : freetype2  python-cycler  python-dateutil  python-kiwisolver
+                  python-numpy  python-pillow  python-pyparsing  qhull
+Optional Deps   : tk: Tk{Agg,Cairo} backends [installed]
+                  pyside2: alternative for Qt5{Agg,Cairo} backends
+                  python-pyqt5: Qt5{Agg,Cairo} backends [installed]
+                  python-gobject: for GTK3{Agg,Cairo} backend [installed]
+                  python-wxpython: WX{,Agg,Cairo} backend
+                  python-cairo: {GTK3,Qt5,Tk,WX}Cairo backends [installed]
+                  python-cairocffi: alternative for Cairo backends
+                  python-tornado: WebAgg backend [installed]
+                  ffmpeg: for saving movies [installed]
+                  imagemagick: for saving animated gifs [installed]
+                  ghostscript: usetex dependencies [installed]
+                  texlive-bin: usetex dependencies [installed]
+                  texlive-latexextra: usetex usage with pdflatex [installed]
+                  python-certifi: https support [installed]
+#+end_example
+
+** Ambientes de Software: O que se Esconde nas Dependências?
+#+LaTeX: \includegraphics<+->[width=0.97\textwidth]{./img/dependency_trees/matplotlib.pdf}%
+
+#+BEGIN_EXPORT latex
+\begin{overlayarea}{\linewidth}{0cm}
+  \vspace{-2.2cm}
+  \begin{center}
+    \includegraphics<+>[height=.8cm]{./img/reprozip.png} \qquad
+    \includegraphics<.>[height=1cm]{./img/docker_logo.png}
+    \includegraphics<.>[height=1cm]{./img/singularity_logo.png}\qquad
+    \includegraphics<.>[height=1cm]{./img/Guix_logo.png}
+    \includegraphics<.>[height=1cm]{./img/nix_logo.png}
+  \end{center}
+\end{overlayarea}
+#+END_EXPORT
+** Plataformas de Compartilhamento e Arquivamento
+\small
+- D.   Spinellis.   /[[https://www.spinellis.gr/sw/url-decay/][The   Decay   and
+  Failures of URL References]]/. CACM, 46(1), 2003
+  #+BEGIN_QUOTE
+  "A meia-vida de uma referência em URL é de aproximadamente 4 anos após sua
+  publicação"
+  #+END_QUOTE
+
+-  P. Habibzadeh. /[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885908/][Decay of References to Web sites in  Articles Published in General Medical Journals:
+  Mainstream vs Small Journals]]/.  Applied Clinical Informatics. 4 (4), 2013
+  #+BEGIN_QUOTE
+  "a meia-vida durou entre 2,2 anos no EMHJ e 5,3 anos no BMJ"
+  #+END_QUOTE
+
+\normalsize
+- \alert{Arquivamento de Artigos} ::
+     #+LaTeX: \raisebox{-1.5ex}{\includegraphics[height=.8cm]{./img/ArXiv-web.png}}
+     #+LaTeX: \raisebox{-1.5ex}{\includegraphics[height=.8cm]{./img/LogoHAL.png}}
+     #+LaTeX: \hfill\raisebox{-3em}{\includegraphics[height=1.8cm]{./img/Internet-archive.png}}\vspace{-2em}
+- \alert{Arquivamento de Dados} ::
+     #+LaTeX: \raisebox{-1.5ex}{\includegraphics[height=.8cm]{./img/Figshare-logo.png}}
+     #+LaTeX: \raisebox{-1.5ex}{\includegraphics[height=.8cm]{./img/Zenodo-logo.jpg}}
+
+- \alert{Arquivamento de Software} ::
+     #+LaTeX: \raisebox{-2.4ex}{\includegraphics[height=1cm]{./img/swh-logo.png}}
+
+#+LaTeX: \hfill \raisebox{-1ex}{\includegraphics[height=.8cm]{./img/git_logo.png}}
+#+LaTeX: \raisebox{-.5ex}{\includegraphics[height=.8cm]{./img/github_logo.png}} or
+#+LaTeX: \raisebox{-1.4ex}{\includegraphics[height=.8cm]{./img/gitlab_logo.png}}
+$=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 ** É Possível Garantir a Reprodutibilidade?
+** Abordagens da ACM
+** Ciência Aberta
 * Mão na Massa: Ferramentas para Reprodutibilidade
 :PROPERTIES:
 :CUSTOM_ID: sec:handson
 :END:
 
-** Controle de Versão
-** Hospedagem
-** Documentos Computacionais
 ** Estatística
-** Arquivamento
+*** Desafios                                                :B_block:BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:BEAMER_env: block
+:END:
+- Como *planejar* experimentos?
+- Como *analisar* resultados?
+- Datasaurus Dozen
+  - https://cran.r-project.org/web/packages/datasauRus/
+*** Abordagens                                              :B_block:BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:BEAMER_env: block
+:END:
+- Gráficos, antes de qualquer análise
+- Análises mais simples primeiro: mas fáceis de interpretar
+- Documentos computacionais
+- Desenho de Experimentos
+- Controle de versão
+** Estatística: O que é Machine Learning?
+#+begin_export latex
+\vspace{-2.4em}
+\begin{center}
+\smaller[0]
+\bgroup
+\def\arraystretch{1.6}%
+\begin{tabular}{>{\raggedright}m{0.38\textwidth}m{0.25\textwidth}m{0.28\textwidth}}
+\alert{Conceito} & \alert{Estatística} & \alert{Aprendizado \mbox{de Máquina}}\\
+\midrule
+Usar dados para estimar \mbox{quantidades} \mbox{desconhecidas} & Estimação & Aprendizado\\
+Predizer \(\mathbf{y}\) discreto a partir de \(\mathbf{x}\) & Classificação & Aprendizado \mbox{Supervisionado}\\
+Dividir dados em grupos & Clusterização & Aprendizado \mbox{Não-Supervisionado}\\
+\((\mathbf{x}_1,\mathbf{y}_1),\dots,(\mathbf{x}_N,\mathbf{y}_N)\) & Desenho Experimental & Conjunto \mbox{de Treinamento}\\
+\((\mathbf{x}_1,\dots,\mathbf{x}_N)\) & Variáveis Preditoras & Características\\
+Intervalo contendo uma estimativa & Intervalo de Confiança & --\\
+\dots{} & \dots{} & \dots{}
+\end{tabular}
+\egroup
+\end{center}
+#+end_export
+
+** Exercício Prático no Site
+
 * Conclusão
 :PROPERTIES:
 :UNNUMBERED: t
