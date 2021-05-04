@@ -1,7 +1,7 @@
 #+STARTUP: overview indent inlineimages logdrawer
 #+OPTIONS: toc:nil TeX:t LaTeX:t
 
-* Exercício
+* Exercício Prático: Estatística e Documentos Computacionais
 ** Dependências
 - Distribuição Linux
 - Bash ou outro emulador de terminal
@@ -32,5 +32,5 @@ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
 [[file:assets/docker_run.png]]
 - Na pasta /work/, abra o notebook do exercício:
 [[file:assets/load_notebook.png]]
-- Todos os pacotes /R/ e /datasets/ já estão instalados no /notebook/. O exercício
-  continua no /Jupyter/
+- Todos  os pacotes  /R/ e  /datasets/ já  estão instalados  no /notebook/,  e o
+  exercício continua lá

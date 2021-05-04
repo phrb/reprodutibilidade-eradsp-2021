@@ -1,6 +1,6 @@
 
 
-# Exercício
+# Exercício Prático: Estatística e Documentos Computacionais
 
 
 ## Dependências
@@ -40,5 +40,5 @@ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
 
 ![img](assets/load_notebook.png)
 
--   Todos os pacotes *R* e *datasets* já estão instalados no *notebook*. O exercício
-    continua no *Jupyter*
+-   Todos  os pacotes  *R* e  *datasets* já  estão instalados  no *notebook*,  e o
+    exercício continua lá
