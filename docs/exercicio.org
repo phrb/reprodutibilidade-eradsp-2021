@@ -9,16 +9,17 @@
 - Conta no Zenodo
 
 ** Dependências
-- Git
-- Jupyter Notebook
-- R
+- [[https://git-scm.com/downloads][Git]]
+- Docker
 
 ** Inicialização
 1. Clone o repositório do curso:
-#+begin_SRC bash :results output :session *Shell* :eval no-export :exports code
-git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
-cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
-#+end_SRC
+#+begin_export markdown
+``` bash
+$ git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
+$ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+```
+#+end_export
 2. Crie um repositório Git local
 3. Copie o notebook com o exercício para seu repositório local
 5. Crie um repositório no GitHub (ou Gitlab)

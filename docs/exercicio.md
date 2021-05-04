@@ -13,17 +13,18 @@
 
 ## Dependências
 
--   Git
--   Jupyter Notebook
--   R
+-   [Git](https://git-scm.com/downloads)
+-   Docker
 
 
 ## Inicialização
 
 1.  Clone o repositório do curso:
 
-    git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
-    cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+``` bash
+$ git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
+$ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+```
 
 1.  Crie um repositório Git local
 2.  Copie o notebook com o exercício para seu repositório local
