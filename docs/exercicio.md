@@ -14,22 +14,36 @@
 ## Dependências
 
 -   [Git](https://git-scm.com/downloads)
--   Docker
+-   [Docker](https://docs.docker.com/get-docker/)
 
 
 ## Inicialização
 
-1.  Clone o repositório do curso:
+-   Clone o repositório do curso:
 
 ``` bash
-$ git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
-$ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
 ```
 
-1.  Crie um repositório Git local
-2.  Copie o notebook com o exercício para seu repositório local
-3.  Crie um repositório no GitHub (ou Gitlab)
-4.  Faça o push do seu repositório local
+-   Construa a imagem do **Docker**:
+
+``` bash
+cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+```
+
+-   Inicie o servidor **Jupyter**:
+
+``` bash
+./build.sh -r
+```
+
+-   Pelo seu *browser*, acesse o servidor **Jupyter** usando o *token* gerado:
+
+![img](assets/docker_run.png)
+
+-   Na pasta *work*, abra o notebook do exercício:
+
+![img](assets/load_notebook.png)
 
 
 ## Instalando os Pacotes R
