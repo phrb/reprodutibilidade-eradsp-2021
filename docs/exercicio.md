@@ -3,21 +3,16 @@
 # Exercício
 
 
-## Pré-Dependências
+## Dependências
 
 -   Distribuição Linux
 -   Bash ou outro emulador de terminal
 -   Conta no GitHub, Gitlab
--   Conta no Zenodo
-
-
-## Dependências
-
 -   [Git](https://git-scm.com/downloads)
 -   [Docker](https://docs.docker.com/get-docker/)
 
 
-## Inicialização
+## Inicialização do Exercício
 
 -   Clone o repositório do curso:
 
@@ -45,17 +40,5 @@ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
 
 ![img](assets/load_notebook.png)
 
-
-## Instalando os Pacotes R
-
-1.  Abra o notebook e rode a célula de setup
-2.  Verifique a instalação rodando os exemplos do *Datasaurus*
-
-
-## Análisando os Resultados
-
-
-## Controle de Versão
-
-
-## Arquivamento
+-   Todos os pacotes *R* e *datasets* já estão instalados no *notebook*. O exercício
+    continua no *Jupyter*

@@ -2,17 +2,14 @@
 #+OPTIONS: toc:nil TeX:t LaTeX:t
 
 * Exercício
-** Pré-Dependências
+** Dependências
 - Distribuição Linux
 - Bash ou outro emulador de terminal
 - Conta no GitHub, Gitlab
-- Conta no Zenodo
-
-** Dependências
 - [[https://git-scm.com/downloads][Git]]
 - [[https://docs.docker.com/get-docker/][Docker]]
 
-** Inicialização
+** Inicialização do Exercício
 - Clone o repositório do curso:
 #+begin_export markdown
 ``` bash
@@ -35,13 +32,5 @@ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
 [[file:assets/docker_run.png]]
 - Na pasta /work/, abra o notebook do exercício:
 [[file:assets/load_notebook.png]]
-
-** Instalando os Pacotes R
-1. Abra o notebook e rode a célula de setup
-2. Verifique a instalação rodando os exemplos do /Datasaurus/
-
-** Análisando os Resultados
-
-** Controle de Versão
-
-** Arquivamento
+- Todos os pacotes /R/ e /datasets/ já estão instalados no /notebook/. O exercício
+  continua no /Jupyter/
