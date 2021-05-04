@@ -20,11 +20,15 @@
 
 ## Inicialização
 
-1.  Clone o repositório do curso
-2.  Crie um repositório Git local
-3.  Copie o notebook com o exercício para seu repositório local
-4.  Crie um repositório no GitHub (ou Gitlab)
-5.  Faça o push do seu repositório local
+1.  Clone o repositório do curso:
+
+    git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
+    cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+
+1.  Crie um repositório Git local
+2.  Copie o notebook com o exercício para seu repositório local
+3.  Crie um repositório no GitHub (ou Gitlab)
+4.  Faça o push do seu repositório local
 
 
 ## Instalando os Pacotes R

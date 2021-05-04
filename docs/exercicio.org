@@ -14,7 +14,11 @@
 - R
 
 ** Inicialização
-1. Clone o repositório do curso
+1. Clone o repositório do curso:
+#+begin_SRC bash :results output :session *Shell* :eval no-export :exports code
+git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
+cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+#+end_SRC
 2. Crie um repositório Git local
 3. Copie o notebook com o exercício para seu repositório local
 5. Crie um repositório no GitHub (ou Gitlab)
