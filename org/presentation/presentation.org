@@ -258,6 +258,16 @@ Resultados de um questionário com *1.500 cientistas*:
 - *Colaboração* e *comunidade*
 - Melhores *incentivos*
 
+#+begin_export latex
+\begin{center}
+  \colorbox{Highlight}{\parbox{.85\columnwidth}{
+      Trabalhar de forma \alert{transparente} para
+      diminuir a distância entre \alert{quem produz e quem lê}}}
+\end{center}
+
+#+end_export
+
+
 *** Stop columns                                          :B_ignoreheading:
 :PROPERTIES:
 :BEAMER_env: ignoreheading
