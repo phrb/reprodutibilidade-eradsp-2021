@@ -533,6 +533,23 @@ Statistics]]/, Larry Wasserman
 #+end_export
 
 ** Exercício Prático no Site
+- Site com *instruções* e mais *recursos*:
+
+#+latex: \bgroup\center
+#+latex: \includegraphics[height=3.4cm]{./img/eradsp_preview.png}
+
+https://phrb.github.io/reprodutibilidade-eradsp-2021
+
+#+latex: \egroup
+
+- Temos uma imagem *Docker* com Jupyter Notebook, R, pacotes, e dados:
+
+#+latex: \begin{center}\begin{minipage}{0.75\textwidth}
+#+begin_SRC bash :results output :session *Shell* :eval no-export :exports code
+git clone https://github.com/phrb/reprodutibilidade-eradsp-2021.git
+cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
+#+end_SRC
+#+latex: \end{minipage}\end{center}
 
 * Conclusão
 :PROPERTIES:
