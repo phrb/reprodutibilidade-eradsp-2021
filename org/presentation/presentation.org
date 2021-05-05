@@ -479,8 +479,11 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 :END:
 - Como *planejar* experimentos?
 - Como *analisar* resultados?
-- Datasaurus Dozen
-  - https://cran.r-project.org/web/packages/datasauRus/
+- O que mostrar nos *gráficos*?
+- [[https://pt.wikipedia.org/wiki/Quarteto_de_Anscombe][Quarteto de Anscombe]]
+- [[http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html][Datasaurus]]
+  [[https://www.autodesk.com/research/publications/same-stats-different-graphs][Dozen]]:
+  não confiar em *sumarizações*
 *** Abordagens                                              :B_block:BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.5
@@ -491,25 +494,41 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 - Documentos computacionais
 - Desenho de Experimentos
 - Controle de versão
-** Estatística: O que é Machine Learning?
-#+begin_export latex
-\vspace{-2.4em}
-\begin{center}
-\smaller[0]
-\bgroup
-\def\arraystretch{1.6}%
-\begin{tabular}{>{\raggedright}m{0.38\textwidth}m{0.25\textwidth}m{0.28\textwidth}}
-\alert{Conceito} & \alert{Estatística} & \alert{Aprendizado \mbox{de Máquina}}\\
-\midrule
-Usar dados para estimar \mbox{quantidades} \mbox{desconhecidas} & Estimação & Aprendizado\\
-Predizer \(\mathbf{y}\) discreto a partir de \(\mathbf{x}\) & Classificação & Aprendizado \mbox{Supervisionado}\\
-Dividir dados em grupos & Clusterização & Aprendizado \mbox{Não-Supervisionado}\\
-\((\mathbf{x}_1,\mathbf{y}_1),\dots,(\mathbf{x}_N,\mathbf{y}_N)\) & Desenho Experimental & Conjunto \mbox{de Treinamento}\\
-\((\mathbf{x}_1,\dots,\mathbf{x}_N)\) & Variáveis Preditoras & Características\\
-Intervalo contendo uma estimativa & Intervalo de Confiança & --\\
-\dots{} & \dots{} & \dots{}
-\end{tabular}
+** Estatística e Machine Learning
+\vspace{-1.1em}
+
+\bgroup\small
+Tabela                     no                    prefácio                     de
+/[[https://link.springer.com/book/10.1007/978-0-387-21736-9][All              of
+Statistics]]/, Larry Wasserman
 \egroup
+
+#+begin_export latex
+\vspace{-1em}
+\begin{center}
+  \smaller[0]
+  \bgroup
+  \def\arraystretch{1.6}%
+  \resizebox{0.9\textwidth}{!}{
+  \begin{tabular}{>{\raggedright}m{0.38\textwidth}m{0.25\textwidth}m{0.28\textwidth}}
+    \alert{Conceito} & \alert{Estatística} & \alert{Aprendizado \mbox{de Máquina}}\\
+    \midrule
+    Usar dados para estimar \mbox{quantidades} \mbox{desconhecidas} & Estimação & Aprendizado\\
+    Predizer \(\mathbf{y}\) discreto a partir de \(\mathbf{x}\) & Classificação & Aprendizado \mbox{Supervisionado}\\
+    Dividir dados em grupos & Clusterização & Aprendizado \mbox{Não-Supervisionado}\\
+    \((\mathbf{x}_1,\mathbf{y}_1),\dots,(\mathbf{x}_N,\mathbf{y}_N)\) & Desenho Experimental & Conjunto \mbox{de Treinamento}\\
+    \((\mathbf{x}_1,\dots,\mathbf{x}_N)\) & Variáveis Preditoras & Características\\
+    Intervalo contendo uma estimativa & Intervalo de Confiança & --
+  \end{tabular}
+  }
+    \egroup
+\end{center}
+#+end_export
+
+#+begin_export latex
+\begin{center}
+  \colorbox{Highlight}{Conceitos   de  estatística   ajudam   a  compreender   e
+    contextualizar Machine Leaning}
 \end{center}
 #+end_export
 
