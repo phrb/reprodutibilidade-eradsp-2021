@@ -557,6 +557,52 @@ cd reprodutibilidade-eradsp-2021/exercicio_pratico && ./build.sh -b
 :END:
 
 ** É possível fazer Ciência (mais) Reprodutível!
+:PROPERTIES:
+:BEAMER_opt: t
+:END:
+
+#+LaTeX: \begin{columns}\begin{column}[t]{.4\linewidth}\centering
+\bf *Cadernos de Laboratório*
+
+#+ATTR_LaTeX: :width .7\textwidth
+file:./img/jupyterpreview.png
+
+#+LaTeX: \includegraphics[height=.7cm]{./img/Jupyter_logo.png}
+#+LaTeX: \includegraphics[height=.7cm]{./img/OrgMode_logo.png}
+#+LaTeX: \includegraphics[height=.7cm]{./img/RStudio_logo.png}
+#+ATTR_LaTeX: :width 0.65\textwidth
+file:./img/workflows.png
+
+#+LaTeX: \end{column}\begin{column}[t]{.35\linewidth}\centering
+\bf *Ambientes de Software*
+
+#+ATTR_LaTeX: :height 2cm
+file:./img/dependency_trees/matplotlib.pdf
+#+ATTR_LaTeX: :height 1.1cm
+file:./img/platform_diversity.png
+
+#+LaTeX: \includegraphics[height=.8cm]{./img/docker_logo.png}
+#+LaTeX: \includegraphics[height=.8cm]{./img/singularity_logo.png}
+
+#+LaTeX: \includegraphics[height=.7cm]{./img/reprozip.png}
+
+#+LaTeX: \includegraphics[height=.8cm]{./img/Guix_logo.png}
+#+LaTeX: \includegraphics[height=.8cm]{./img/nix_logo.png}
+
+#+LaTeX: \end{column}\begin{column}[t]{.35\linewidth}\centering
+\bf *Plataformas de Compartilhamento*\bigskip
+
+#+LaTeX: \includegraphics[height=1cm]{./img/git_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/github_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/gitlab_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/JupyterHub_logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/ArXiv-web.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/LogoHAL.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/Figshare-logo.png}
+#+LaTeX: \includegraphics[height=1cm]{./img/Zenodo-logo.jpg}
+#+LaTeX: \includegraphics[height=1cm]{./img/swh-logo.png}
+
+#+LaTeX: \end{column}\end{columns}\bigskip
 * Ending Title :B_ignoreheading:
 :PROPERTIES:
 :BEAMER_env: ignoreheading
