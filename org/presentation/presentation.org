@@ -418,8 +418,54 @@ Optional Deps   : tk: Tk{Agg,Cairo} backends [installed]
 #+LaTeX: \raisebox{-1.4ex}{\includegraphics[height=.8cm]{./img/gitlab_logo.png}}
 $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 ** É Possível Garantir a Reprodutibilidade?
-** Abordagens da ACM
-** Ciência Aberta
+*Não*. Mas podemos melhorar muito se nos comprometermos a sempre:
+
+1. Ensinar sobre *reprodutibilidade* aos alunos
+2. Manter todo código e texto sob *controle de versão*
+3. *Verificar* e *validar* resultados
+4. *Compartilhar* dados, scripts, e figuras *sob  CC-BY*
+5. Disponibilizar *preprints* no arXiv no *momento da submissão*
+6. Disponibilizar *código* no *momento da submissão*
+7. Adicionar uma seção sobre *reprodutibilidade* ao fim de cada artigo
+8. Manter *presença atualizada na internet*
+
+\vspace{1em}
+
+ (Manifesto: [[https://hal.inria.fr/hal-01367344/document][WSSSPE]],
+ [[http://lorenabarba.com/gallery/reproducibility-pi-manifesto/][Lorena Barba]],
+ [[https://www.go-fair.org/fair-principles/][FAIR]])
+** Mudando as Práticas de Publicação e Pesquisa
+- Avaliação de Artefatos e Insígnias da ACM
+     #+BEGIN_CENTER
+     \includegraphics[height=1cm]{./img/ae_badge1.png}
+     \includegraphics[height=1cm]{./img/ae_badge2.png}
+     \includegraphics[height=1cm]{./img/acm_badges.pdf}
+     #+END_CENTER
+- Grandes Conferências que fazem esforços
+  - [[https://sc19.supercomputing.org/submit/reproducibility-initiative/][Supercomputing]]: Descrição de Artefatos (AD) *obrigatória*, Avaliação de
+    Artefatos (AE) ainda é  *opcional*, revisão *duplo-cega* vs. *Reprodutibilidade*
+  - [[https://nips.cc/Conferences/2019/CallForPapers][NeurIPS]], [[https://reproducibility-challenge.github.io/iclr_2019/][ICLR]]: *Revisões Abertas*, desafios de reprodutibilidade
+    - [[https://www.youtube.com/watch?v=Kee4ch3miVA][Joelle Pineau @ NeurIPS'18]]
+  - [[http://db-reproducibility.seas.harvard.edu/papers/index.html][ACM SIGMOD 2015-2019]], /Most Reproducible Paper Award/...
+- Cultura está em evolução, as pessoas começam a se importar e disponibilizar materiais, *erros são encontrados e consertados*
+** Pilares da Ciência Aberta
+#+begin_export latex
+\begin{enumerate}
+\item Acesso Aberto \qquad\includegraphics[height=1cm]{./img/open-access.png}
+\item Dados Abertos \qquad\raisebox{-1.8em}{\includegraphics[height=1cm]{./img/FAIR_data_principles.jpg}}\vspace{-1em}
+\item Software Livre e Aberto \hspace{3cm}\raisebox{-1.8em}{\includegraphics[height=1cm]{./img/open-source.png}\includegraphics[height=1cm]{./img/gnu.png}\includegraphics[height=1cm]{./img/tux.png}}\vspace{-1.5em}
+  \begin{itemize}
+  \item \emph{Hardware Aberto}
+  \end{itemize}
+\item \alert{Metodologia Aberta} (\alert{Ciência Reprodutível})
+  \begin{itemize}
+  \item \emph{Ciência com Notebooks Abertos}
+  \item \emph{Infrastrutura para Ciência Aberta}
+  \end{itemize}\vspace{-1cm}
+\item \alert{Revisão por pares Aberta} \hfill\raisebox{-1em}{\includegraphics[height=2cm]{./img/open-review.png}}
+\item Recursos Educacionais Abertos \includegraphics[height=1cm]{./img/open-educational-resources.png}
+\end{enumerate}
+#+end_export
 * Mão na Massa: Ferramentas para Reprodutibilidade
 :PROPERTIES:
 :CUSTOM_ID: sec:handson
