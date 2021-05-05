@@ -471,29 +471,6 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 :CUSTOM_ID: sec:handson
 :END:
 
-** Estatística
-*** Desafios                                                :B_block:BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:BEAMER_env: block
-:END:
-- Como *planejar* experimentos?
-- Como *analisar* resultados?
-- O que mostrar nos *gráficos*?
-- [[https://pt.wikipedia.org/wiki/Quarteto_de_Anscombe][Quarteto de Anscombe]]
-- [[http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html][Datasaurus]]
-  [[https://www.autodesk.com/research/publications/same-stats-different-graphs][Dozen]]:
-  não confiar em *sumarizações*
-*** Abordagens                                              :B_block:BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:BEAMER_env: block
-:END:
-- Gráficos, antes de qualquer análise
-- Análises mais simples primeiro: mas fáceis de interpretar
-- Documentos computacionais
-- Desenho de Experimentos
-- Controle de versão
 ** Estatística e Machine Learning
 \vspace{-1.1em}
 
@@ -532,7 +509,30 @@ Statistics]]/, Larry Wasserman
 \end{center}
 #+end_export
 
-** Exercício Prático no Site
+** Análise Estatística
+*** Desafios                                                :B_block:BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:BEAMER_env: block
+:END:
+- Como *planejar* experimentos?
+- Como *analisar* resultados?
+- O que mostrar nos *gráficos*?
+- [[https://pt.wikipedia.org/wiki/Quarteto_de_Anscombe][Quarteto de Anscombe]]
+- [[http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html][Datasaurus]]
+  [[https://www.autodesk.com/research/publications/same-stats-different-graphs][Dozen]]:
+  não confiar em *sínteses*
+*** Abordagens                                              :B_block:BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:BEAMER_env: block
+:END:
+- *Gráficos*, antes de qualquer análise
+- *Análises mais simples* primeiro: mais fáceis de interpretar
+- Controle de versão
+- Documentos computacionais
+- Desenho de Experimentos
+** Análise Estatística: Exercício Prático no Site
 - Site com *instruções* e mais *recursos*:
 
 #+latex: \bgroup\center
@@ -603,6 +603,24 @@ file:./img/platform_diversity.png
 #+LaTeX: \includegraphics[height=1cm]{./img/swh-logo.png}
 
 #+LaTeX: \end{column}\end{columns}\bigskip
+** É possível fazer Ciência (mais) Aberta e Reprodutível!
+#+begin_export latex
+\begin{enumerate}
+\item Acesso Aberto \qquad\includegraphics[height=1cm]{./img/open-access.png}
+\item Dados Abertos \qquad\raisebox{-1.8em}{\includegraphics[height=1cm]{./img/FAIR_data_principles.jpg}}\vspace{-1em}
+\item Software Livre e Aberto \hspace{3cm}\raisebox{-1.8em}{\includegraphics[height=1cm]{./img/open-source.png}\includegraphics[height=1cm]{./img/gnu.png}\includegraphics[height=1cm]{./img/tux.png}}\vspace{-1.5em}
+  \begin{itemize}
+  \item \emph{Hardware Aberto}
+  \end{itemize}
+\item \alert{Metodologia Aberta} (\alert{Ciência Reprodutível})
+  \begin{itemize}
+  \item \emph{Ciência com Notebooks Abertos}
+  \item \emph{Infrastrutura para Ciência Aberta}
+  \end{itemize}\vspace{-1cm}
+\item \alert{Revisão por pares Aberta} \hfill\raisebox{-1em}{\includegraphics[height=2cm]{./img/open-review.png}}
+\item Recursos Educacionais Abertos \includegraphics[height=1cm]{./img/open-educational-resources.png}
+\end{enumerate}
+#+end_export
 * Ending Title :B_ignoreheading:
 :PROPERTIES:
 :BEAMER_env: ignoreheading
