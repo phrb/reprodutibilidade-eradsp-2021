@@ -6,8 +6,8 @@
 ## Dependências
 
 -   Distribuição Linux
--   Bash ou outro emulador de terminal
--   Conta no GitHub, Gitlab
+    -   Alternativamente, outros sistemas que suportem Docker
+-   Bash, ou outro emulador de terminal
 -   [Git](https://git-scm.com/downloads)
 -   [Docker](https://docs.docker.com/get-docker/)
 
