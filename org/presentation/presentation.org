@@ -466,12 +466,7 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 \item Recursos Educacionais Abertos \includegraphics[height=1cm]{./img/open-educational-resources.png}
 \end{enumerate}
 #+end_export
-* Mão na Massa: Ferramentas para Reprodutibilidade
-:PROPERTIES:
-:CUSTOM_ID: sec:handson
-:END:
-
-** Estatística e Machine Learning
+** Estatística: Machine Learning?
 \vspace{-1.1em}
 
 \bgroup\small
@@ -532,6 +527,11 @@ Statistics]]/, Larry Wasserman
 - Controle de versão
 - Documentos computacionais
 - Desenho de Experimentos
+* Mão na Massa: Ferramentas para Reprodutibilidade
+:PROPERTIES:
+:CUSTOM_ID: sec:handson
+:END:
+
 ** Análise Estatística: Exercício Prático no Site
 - Site com *instruções* e mais *recursos*:
 
