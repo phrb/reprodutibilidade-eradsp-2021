@@ -420,8 +420,8 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 ** É Possível Garantir a Reprodutibilidade?
 *Não*. Mas podemos melhorar muito se nos comprometermos a sempre:
 
-1. Ensinar sobre *reprodutibilidade* aos alunos
-2. Manter todo código e texto sob *controle de versão*
+1. Divulgar, praticar, e difundir a *reprodutibilidade*
+2. Manter todo código, texto, e dados sob *controle de versão*
 3. *Verificar* e *validar* resultados
 4. *Compartilhar* dados, scripts, e figuras *sob  CC-BY*
 5. Disponibilizar *preprints* no arXiv no *momento da submissão*
