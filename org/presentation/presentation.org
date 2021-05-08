@@ -1,7 +1,7 @@
 #+STARTUP: beamer overview indent inlineimages logdrawer
 #+TITLE: @@latex: Ciência Reprodutível para Experimentos em \\
 #+TITLE: Computação de Alto Desempenho@@
-#+AUTHOR:    \footnotesize \alert{Pedro Bruel}, Lucas Schnorr, Alfredo Goldman
+#+AUTHOR:    \footnotesize \alert{Pedro Bruel} (USP), Lucas Schnorr (UFRGS), Alfredo Goldman (USP)
 #+DATE:      \scriptsize \emph{phrb@ime.usp.br} \newline \scriptsize \today
 #+DESCRIPTION:
 #+KEYWORDS:
