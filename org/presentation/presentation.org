@@ -444,6 +444,10 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 - Grandes Conferências que fazem esforços
   - [[https://sc19.supercomputing.org/submit/reproducibility-initiative/][Supercomputing]]: Descrição de Artefatos (AD) *obrigatória*, Avaliação de
     Artefatos (AE) ainda é  *opcional*, revisão *duplo-cega* vs. *Reprodutibilidade*
+    - Dois comitês: Reprodutibilidade e Programa
+  - ACM HotNets: Anonimizar repositórios para os revisores
+    - Autores se comprometem
+  - ACM Middleware: Processo de revisão cego, depois aberto
   - [[https://nips.cc/Conferences/2019/CallForPapers][NeurIPS]], [[https://reproducibility-challenge.github.io/iclr_2019/][ICLR]]: *Revisões Abertas*, desafios de reprodutibilidade
     - [[https://www.youtube.com/watch?v=Kee4ch3miVA][Joelle Pineau @ NeurIPS'18]]
   - [[http://db-reproducibility.seas.harvard.edu/papers/index.html][ACM SIGMOD 2015-2019]], /Most Reproducible Paper Award/...
@@ -466,6 +470,12 @@ $=$ excelentes para colaborações ($\ne$ arquivamento)\hfill\null
 \item Recursos Educacionais Abertos \includegraphics[height=1cm]{./img/open-educational-resources.png}
 \end{enumerate}
 #+end_export
+
+- PeerJ: revisor escolhe se quer desanonimizar
+- Workflows: comparilhamento de experimentos
+  - https://www.myexperiment.org/home
+  - https://www.w3.org/TR/prov-dm/
+  - https://pegasus.isi.edu/
 ** Estatística: Machine Learning?
 \vspace{-1.1em}
 
